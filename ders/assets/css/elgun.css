@@ -1,0 +1,821 @@
+@import url('./rs.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+
+title {
+    background-color: #6b7f13;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(10,18,31);
+    border: none;
+}
+.curtain-navbar .fa-xmark {
+    color: #FFFFFF;
+    font-size: 44px;
+    position: absolute;
+    right: 40px;
+}
+.curtain-navbar {
+    background-color: rgba(156, 156, 156, 156);
+    height: 100vh;
+    position: fixed;
+    width: 0;
+    overflow-x: hidden;
+    transition: 1.2s cubic-bezier(.92,.34,.2,1.33);
+}
+.curtain-navbar a {
+    color: #FFFFFF;
+    margin-top: 20px;
+    font-size: 34px;
+    text-decoration: none;
+    transition: .5s ease;
+}
+.curtain-navbar .overlay-nav-links {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.curtain-navbar a:hover {
+    transform: translateX(20px);
+}
+
+.nav-links,
+.href {
+    display: none;
+}
+
+.robot-control {
+    width: 200px;
+}
+
+.imgrobot {
+    width: 100%;
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 20px;
+}
+
+.fa-bars {
+    color: #04b0e9;
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.genaretion-p {
+    font-size: 18px;
+    color: #ff0000;
+    font-weight: 600;
+    margin: 10px 0px;
+}
+
+.artificial-intelligence {
+    font-size: 29px;
+    color: #FFFFFF;
+    font-weight: 800;
+}
+.lorem-p {
+    font-size: 18px;
+    color: #FFFFFF;
+    font-weight: 600;
+    margin: 10px 5px;
+}
+.intro-right-side {
+    width: 320px;
+    margin: 20px auto;
+}
+.intro-right-side img {
+    width: 100%;
+}
+.first-button-intro {
+    background-color: #f2820b;
+    color: #FFFFFF;
+    width: 171px;
+    height: 40px;
+    border-radius: 5px;
+}
+.second-button-intro {
+    background-color: #f28603;
+    color: #FFFFFF;
+    width: 171px;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+}
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo-ipsumm {
+    width: 250px;
+    margin: auto;
+}
+
+.logo-ipsum-1 {
+    margin: 15px 0;
+    width: 100%;
+}
+.center {
+    display: flex;
+    flex-direction: column;
+}
+
+.center-left-side {
+    width: 320px;
+    margin: 20px auto;
+}
+
+.center-left-side img {
+    width: 100%;
+}
+
+.apply-deep-data {
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    color: white;
+    margin: 10px 0;
+}
+
+.visual-mockups {
+    color: white;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.learn-more {
+    background-color: #f9d804;
+    color: #FFFFFF;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.cards {
+    padding: 50px 0;
+}
+
+.card-div {
+    width: 300px;
+    height: 300px;
+    color: #FFFFFF;
+    background-color: #0e1523;
+    box-shadow: 6px 6px 6px -2px rgba(255, 255, 255, 0.67);
+    border-radius: 10px;
+    margin: auto;
+}
+
+.card-div:hover {
+    opacity: 0.5;
+}
+
+.cards-div-img {
+    padding: 10px 0;
+    margin: 0 auto;
+    width: 80px;
+}
+
+.container-card {
+    text-align: center;
+}
+
+.cards-h1 {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    margin: 15px auto;
+}
+
+.cards-p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    width: 280px;
+    margin: auto;
+}
+
+.cards .card-div:not(:first-child) {
+    display: none;
+}
+
+.transition {
+    width: 65px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+
+.result {
+    color: #FFFFFF;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.result-right-side {
+    width: 320px;
+    margin: auto;
+}
+
+.result-right-side img {
+    width: 100%;
+}
+
+.result-left-side {
+    margin: 10px 0;
+}
+
+.result-left-side h1 {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.result-left-side p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.result-left-side p br {
+    display: none;
+}
+
+
+.footer {
+    background-color: #070e1c;
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 30px;
+    padding: 10px 40px 50px 40px;
+}
+
+.column-left h2 {
+    font-size: 15.963px;
+    font-style: normal;
+    font-weight: 600;
+    color: #f1cf08;
+    margin-top: 3px;
+}
+
+.column-left p,
+.column-left div,
+.column-right p,
+.column-left a,
+.column-right a,
+.column-left span {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 450;
+}
+
+.column-center h3,
+.column-right h3 {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 45px;
+}
+
+.column-left p {
+    margin: 10px 0 37px 0;
+}
+
+.column-left div {
+    margin: 10px 0;
+}
+
+.column-center p {
+    margin: 20px 0;
+}
+
+.column-right p {
+    margin: 10px 0 31px 0;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin: 21px 0 40px 0;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+select {
+    background-color: transparent;
+    color: rgb(29, 207, 16);
+    border: none;
+}
+
+
+
+@media(min-width:768px) {
+    .nav-links,
+    .href {
+        display: block;
+    }
+
+    .href {
+        background-color: #b31717;
+        color: aliceblue;
+        border-radius: 5px;
+        width: 112px;
+        height: 40px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .href-p {
+        margin-top: 12px;
+    }
+
+    .fa-bars {
+        display: none;
+    }
+
+    nav>a {
+        justify-content: space-between;
+        margin: 0px 3px;
+        text-decoration: none;
+
+    }
+
+    .header-section {
+        width: 700px;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .introduction {
+        width: 700px;
+        margin: auto;
+        flex-direction: row;
+    }
+
+    .artificial-intelligence {
+        font-size: 40px;
+    }
+
+    .lorem-p {
+        width: 300px;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        margin: 20px 0px;
+    }
+
+    .genaretion-p {
+        margin: 10px 0px;
+    }
+
+    .intro-left-side {
+        padding-top: 50px;
+    }
+
+
+    .buttons {
+        justify-content: stretch;
+    }
+
+    .intro-right-side {
+        padding-top: 20px;
+    }
+
+
+    .rocket-intro {
+        width: 300px;
+    }
+
+
+    .logo-ipsumm {
+        width: 700px !important;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .logo-ipsum-1,
+    .logo-ipsum-2,
+    .logo-ipsum-3,
+    .logo-ipsum-4 {
+        display: block;
+        width: 160px;
+    }
+
+    .swiper {
+        margin: 0 auto;
+    }
+
+    .logo-ipsumm {
+        display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .logo-ipsumm img {
+        width: 200px !important;
+    }
+
+    .center {
+        width: 700px;
+        margin: auto;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .apply-deep-data {
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    .visual-mockups {
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 600;
+        margin-top: 20px;
+    }
+
+    .center-left-side img {
+        width: 345px;
+    }
+
+    .center-right-side {
+        margin: 50px 0 30px 0;
+        width: 345px;
+    }
+
+    .learn-more {
+        margin-top: 20px;
+    }
+
+    .cards {
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+    .cards .card-div:nth-child(1) {
+        display: none;
+    }
+
+    .cards .card-div:nth-child(even) {
+        display: block;
+    }
+
+    .result {
+        width: 700px;
+        flex-direction: row;
+        margin: 30px auto;
+    }
+
+    .result-right-side {
+        width: 350px;
+    }
+
+    .result-right-side img {
+        width: 100%;
+    }
+
+    .result-left-side {
+        width: 350px;
+    }
+
+    .result-left-side h1 {
+        font-size: 26px;
+        margin: 20px 0;
+    }
+
+    .result-left-side p {
+        margin: 10px 0;
+    }
+
+}
+
+@media (min-width:1080px) {
+    .header-section {
+        width: 1000px;
+        margin: auto;
+        margin-top: 15px;
+    }
+
+    nav>a {
+        justify-content: space-between;
+        margin: 0px 15px;
+    }
+
+    .introduction {
+        width: 1000px;
+        margin: auto;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    .intro-right-side {
+        width: 442px;
+    }
+
+    .intro-left-side {
+        width: 550px;
+        margin-top: 30px;
+    }
+
+    .first-button-intro {
+        margin: 0 10px 0 0;
+    }
+
+    .genaretion-p {
+        margin-bottom: 20px;
+    }
+
+    .lorem-p {
+        width: 558px;
+        margin-top: 30px;
+    }
+
+    .buttons {
+        margin-top: 40px;
+    }
+
+    .arrow-button {
+        margin-right: 5px;
+    }
+
+    .rocket-intro {
+        height: 400px;
+    }
+
+    .logo-ipsumm {
+        width: 1000px;
+        margin: 30px auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo-ipsum-1,
+    .logo-ipsum-2,
+    .logo-ipsum-3,
+    .logo-ipsum-4 {
+        display: block;
+        width: 225px;
+    }
+
+    .center {
+        width: 1000px;
+        justify-content: space-between;
+    }
+
+    .center-left-side {
+        width: 600px;
+        height: 600px;
+    }
+
+    .center-left-side img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .center-right-side {
+        width: 400px;
+        height: 600px;
+    }
+
+    .apply-deep-data {
+        margin-top: 150px;
+    }
+
+    .visual-mockups {
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        margin: 25px 0;
+    }
+
+    .learn-more {
+        margin-bottom: 150px;
+        width: 150px;
+        border-radius: 5px;
+    }
+
+    .cards .card-div:not(:first-child) {
+        display: block;
+    }
+
+    .result {
+        width: 1000px;
+        margin: 150px auto;
+    }
+
+    .result-left-side {
+        width: 500px;
+    }
+
+    .result-right-side {
+        width: 500px;
+    }
+
+    .result-right-side img {
+        width: 100%;
+    }
+
+    .result-left-side h1 {
+        font-size: 37px;
+    }
+
+    .result-left-side p {
+        font-size: 16px;
+        margin: 30px 0;
+    }
+
+    .footer {
+        padding: 77px 100px;
+    }
+
+    @media (min-width:1500px) {
+
+        .header-section {
+            width: 1146px;
+            height: 100px;
+            margin-top: 0;
+        }
+
+        .robot-control {
+            width: 283px;
+            height: 57px;
+        }
+
+        .robot-control img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .nav-links {
+            margin: 39px 256px 39px 84px;
+        }
+
+        .nav-links a {
+            width: 47px;
+            height: 22px;
+            gap: 40px;
+        }
+
+        .introduction {
+            width: 1350px;
+            padding-left: 200px;
+        }
+
+        .intro-left-side {
+            width: 604px;
+            height: 415px;
+            margin-top: 75px;
+        }
+
+        .intro-left-side h1 {
+            font-size: 55px;
+            font-style: normal;
+            font-weight: 800;
+            width: 604px;
+            height: 142px;
+        }
+
+        .intro-left-side .genaretion-platform {
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+        }
+
+        .intro-left-side .lorem-control {
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+        }
+
+        .intro-right-side {
+            width: 632px;
+            height: 634px;
+            color: rgb(165, 153, 153);
+            margin-left: 114px;
+            margin-top: 0px;
+        }
+
+        .intro-right-side img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .logo-ipsumm {
+            width: 1146.449px;
+            height: 59px;
+        }
+
+        .logo-ipsum-1,
+        .logo-ipsum-2,
+        .logo-ipsum-3,
+        .logo-ipsum-4 {
+            width: 220px;
+            height: 60px;
+        }
+
+        .logo-ipsum-1 {
+            margin: 0;
+        }
+
+        .center {
+            width: 1277px;
+            margin-left: 256px;
+            margin-right: 387px;
+        }
+
+        .center-right-side {
+            margin-bottom: 0;
+        }
+
+        .center-left-side {
+            width: 650px;
+            height: 550px;
+        }
+
+        .center-left-side img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .apply-deep-data {
+            width: 484px;
+            font-size: 40px;
+        }
+
+        .visual-mockups {
+            width: 460px;
+            font-size: 16px;
+        }
+
+        .learn-more {
+            margin-bottom: 0;
+        }
+
+        .cards .card-div:nth-child(1) {
+            display: block;
+        }
+
+        .result {
+            width: 1146px;
+            height: 551px;
+        }
+
+        .result-left-side {
+            width: 548px;
+        }
+
+        .result-left-side h1 {
+            font-size: 39px;
+            font-style: normal;
+            font-weight: 700;
+        }
+
+        .result-left-side p {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            gap: 20px;
+        }
+
+        .result-right-side {
+            width: 642px;
+            height: 551px;
+        }
+
+        .result-right-side img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .footer {
+            padding: 77px 316px 148px 316px;
+        }
+    }
